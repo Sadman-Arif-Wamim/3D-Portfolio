@@ -15,13 +15,18 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi there, <span className='text-[#915EFF]'>Sadman</span> here
+          Hi there, <span className='text-[#915EFF]'>Sadman</span> here
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm passionate about building scalable web applications and engaging user experiences. <br className='sm:block hidden' />
-          Here's a little about me and what I do!
+            Here's a little about me and what I do!
           </p>
+          <div className="section-with-image">
+            <div className="image-container mt-5 mx-auto">
+            </div>
+          </div>
         </div>
+
       </div>
 
       {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
