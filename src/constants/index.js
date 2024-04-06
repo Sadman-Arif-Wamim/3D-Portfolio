@@ -25,6 +25,11 @@ import {
   threejs,
 } from "../assets";
 
+import angular from '../assets/tech/angular.png'
+import python from '../assets/tech/python.jpg'
+import csharp from '../assets/tech/csharp.jpg'
+import rust from '../assets/tech/rust.png'
+
 export const navLinks = [
   {
     id: "about",
@@ -81,16 +86,24 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "C Sharp",
+    icon: csharp,
+  },
+  {
+    name: "Rust",
+    icon: rust,
+  },
+  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Angular",
+    icon: angular,
   },
   {
     name: "Node JS",
@@ -101,16 +114,8 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
@@ -123,7 +128,7 @@ const experiences = [
     title: "Associate Software Developer",
     company_name: "IQVIA",
     icon: starbucks,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "Mar 2022 - Present",
     points: [
       "Developing and maintaining web and mobile applications using React, Angular, Xamarin and .NET.",
@@ -135,7 +140,7 @@ const experiences = [
   {
     title: "Software Engineer Intern",
     company_name: "IQVIA",
-    icon: tesla,
+    icon: starbucks,
     iconBg: "#E6DEDD",
     date: "Aug 2021 - Feb 2022",
     points: [
