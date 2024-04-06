@@ -1,8 +1,26 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import { useState, useEffect } from "react";
+
 
 const Hero = () => {
+  
+  const [quote, setQuote] = useState('');
+  const [author, setAuthor] = useState('');
+
+  useEffect(() => {
+    fetch("https://type.fit/api/quotes")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        const x = Math.floor((Math.random() * data.length));
+        setQuote(data[x].text);
+        setAuthor((data[x].author).slice(0,-10));
+      });
+  }, []);
+
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -17,9 +35,8 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
           Hi there, <span className='text-[#915EFF]'>Sadman</span> here
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm passionate about building scalable web applications and engaging user experiences. <br className='sm:block hidden' />
-            Here's a little about me and what I do!
+          <p className={`${styles.heroSubText} mt-5 text-white-100`}>
+            {quote} <br className='sm:block hidden' /> <p className="text-blue-200">{author}</p>
           </p>
           <div className="section-with-image">
             <div className="image-container mt-5 mx-auto">
