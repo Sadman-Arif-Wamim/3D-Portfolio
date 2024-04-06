@@ -74,8 +74,26 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
+        
+        <label className='flex flex-col'>
+            <span className='text-blue-400 font-medium mb-2 mt-8'>Email</span>
+        <a href="mailto:sadmanarifwamim11@gmail.com?subject=Lets%20Connect&body=Hello%20I%20am%20reaching%20out%20to%20you" className="flex flex-col gap-8 text-white font-medium mb-4">sadmanarifwamim11@gmail.com</a>
+        </label>
+        <label className='flex flex-col'>
+            <span className='text-blue-400 font-medium mb-2 mt-8'>LinkdIn</span>
+        <a href='https://www.linkedin.com/in/sadman-arif-wamim-2118bb229/' className="flex flex-col gap-8 text-white font-medium mb-4">Sadman Arif Wamim</a>
+        </label>
+        <label className='flex flex-col'>
+            <span className='text-blue-400 font-medium mb-2 mt-8'>Github</span>
+        <a href='https://github.com/Sadman-Arif-Wamim' className="flex flex-col gap-8 text-white font-medium mb-4">Sadman-Arif-Wamim</a>
+        </label>
+        <label className='flex flex-col'>
+            <span className='text-blue-400 font-medium mb-2 mt-8'>Twitter</span>
+        <a href='https://twitter.com/SadmanWamim11' className="flex flex-col gap-8 text-white font-medium mb-4">@SadmanWamim11</a>
+        </label>
 
-        <form
+        <p className="mt-24 flex flex-col gap-8 text-blue-300 font-large mb-4">Lets bring ideas to life!</p>
+        {/* <form
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
@@ -120,7 +138,7 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
-        </form>
+        </form> */}
       </motion.div>
 
       <motion.div
