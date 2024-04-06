@@ -29,6 +29,7 @@ import angular from '../assets/tech/angular.png'
 import python from '../assets/tech/python.jpg'
 import csharp from '../assets/tech/csharp.jpg'
 import rust from '../assets/tech/rust.png'
+import expresspassport from '../assets/expresspassport.jpg'
 
 export const navLinks = [
   {
@@ -203,12 +204,12 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Auth App",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Auth App is a modern back-end application designed to authenticate and authorize roles using the Express.js framework for Node.js with database connecting to MongoDB.",
     tags: [
       {
-        name: "react",
+        name: "express",
         color: "blue-text-gradient",
       },
       {
@@ -216,12 +217,12 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "passport",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: expresspassport,
+    source_code_link: "https://github.com/Sadman-Arif-Wamim/Express-Passport-Auth-App/",
   },
   {
     name: "Job IT",
