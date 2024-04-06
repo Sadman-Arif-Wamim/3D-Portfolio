@@ -11,6 +11,7 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
+        'black-fade': 'rgba(0, 0, 0, 0)'
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
@@ -18,9 +19,10 @@ module.exports = {
       screens: {
         xs: "450px",
       },
-      backgroundImage: {
+      backgroundImage: theme => ({
         "hero-pattern": "url('/src/assets/herobg.png')",
-      },
+        'fade-black': `linear-gradient(to bottom, ${theme('colors.black')} 0%, ${theme('colors.black-fade')} 100%)`,
+      }),
     },
   },
   plugins: [],

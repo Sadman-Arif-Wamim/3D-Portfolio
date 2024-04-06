@@ -1,5 +1,5 @@
 import React from "react";
-import { Tilt } from "react-tilt";
+import {Tilt} from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -39,19 +39,17 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>🚀 About Me</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a full stack software developer, primarily focusing on web and mobile application development
+        with over two years experience in React, Angular, Node, .Net, Express and many more. 
+        I also have an edge for DevOps and automations with knowledge in Docker and CI/CD pipelines. I also have a 
+        deep passion for solving problems and understanding advanced algorithms for continually enhance performance and scalability.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
