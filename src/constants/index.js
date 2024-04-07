@@ -29,7 +29,8 @@ import angular from '../assets/tech/angular.png'
 import python from '../assets/tech/python.jpg'
 import csharp from '../assets/tech/csharp.jpg'
 import rust from '../assets/tech/rust.png'
-import expresspassport from '../assets/expresspassport.jpg'
+import discordbot from '../assets/discordbot.webp'
+import authentication from '../assets/authentication.webp'
 
 export const navLinks = [
   {
@@ -221,50 +222,29 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: expresspassport,
+    image: authentication,
     source_code_link: "https://github.com/Sadman-Arif-Wamim/Express-Passport-Auth-App/",
   },
   {
-    name: "Job IT",
+    name: "Shadow Bot",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A fun discord bot project for personal use leveraging free rapid apis. It has a wide range of functionalities ranging from stating quotes and trivia to playing songs.",
     tags: [
       {
-        name: "react",
+        name: "C#",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "discord",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "rapidapi",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: discordbot,
+    source_code_link: "https://github.com/Sadman-Arif-Wamim/Discord-Shadow-Bot",
   },
 ];
 
